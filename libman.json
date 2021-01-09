@@ -17,6 +17,10 @@
     {
       "library": "signalr.js@2.4.1",
       "destination": "lib/signalr.js"
+    },
+    {
+      "library": "microsoft-signalr@5.0.1",
+      "destination": "lib/microsoft-signalr"
     }
   ]
 }

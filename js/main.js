@@ -1,16 +1,22 @@
 $(function () {
-    var connection = $.hubConnection("https://localhost:5001");
-    var hub = connection.createHubProxy("chathub");
-    hub.on("AddMessage", Method);
-    connection.start()
-        .done(function () {
-            console.log('connected');
-        })
-        .fail(function (a) {
-            console.log('not connected' + a);
-        });
-});
+    const connection = new signalR.HubConnectionBuilder()
+        .withUrl("https://localhost:5001/chathub")
+        .build();
 
-function Method(messageFromHub) {
-    alert(messageFromHub);
-}
+    async function start() {
+        try {
+            await connection.start({
+                jsonp: true
+            });
+            console.log("SignalR Connected.");
+        } catch (err) {
+            console.log(err);
+            setTimeout(start, 10000);
+        }
+    };
+
+    connection.onclose(start);
+
+    // Start the connection.
+    start();
+});
