@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "jquery@3.5.1",
+      "destination": "lib/jquery"
+    },
+    {
+      "library": "twitter-bootstrap@4.5.3",
+      "destination": "lib/twitter-bootstrap"
+    },
+    {
+      "library": "toastr.js@2.1.4",
+      "destination": "lib/toastr.js"
+    },
+    {
+      "library": "signalr.js@2.4.1",
+      "destination": "lib/signalr.js"
+    }
+  ]
+}

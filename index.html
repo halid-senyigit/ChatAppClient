@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="https://iconarchive.com/download/i98390/dakirby309/simply-styled/Microsoft-Visual-Studio.ico"
+        type="image/x-icon">
+    <link rel="stylesheet" href="lib/twitter-bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/toastr.js/toastr.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Chat Client App</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8 border border-dark">
+                <h1>Chat Room</h1>
+                <div class="row">
+                    <div class="col">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore nobis blanditiis nam
+                                alias hic illum dolore perferendis sit molestias veniam minima fugit voluptatum quaerat
+                                fuga, dolorem officiis ea impedit laudantium?
+                                <span class="badge badge-primary badge-pill">username</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus reprehenderit
+                                temporibus quo impedit consequuntur placeat qui harum blanditiis architecto in
+                                asperiores ad ex, suscipit illo reiciendis, labore cupiditate nihil doloremque?
+                                <span class="badge badge-primary badge-pill">username</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nisi provident minima nemo
+                                ut, aut ea molestiae nesciunt consequuntur voluptate maiores ratione odit saepe sunt
+                                necessitatibus amet consectetur fuga ullam?
+                                <span class="badge badge-primary badge-pill">username</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <input type="text" id="messageBox" class="form-control" placeholder="Message" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4 border border-dark">
+                <h1>Users</h1>
+                <div class="row">
+                    <div class="col">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">This is a
+                                primary list group item</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">This is
+                                a secondary list group item</a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-success">This is a
+                                success list group item</a>
+                        </div>
+                        <div id="join" class="input-group mt-4">
+                            <input type="text" class="form-control mr-2">
+                            <span class="input-group-btn">
+                                 <button id="joinBtn" class="btn btn-primary" type="button">Join!</button>
+                            </span>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/signalr.js/jquery.signalR.min.js"></script>
+    <script src="lib/twitter-bootstrap/js/bootstrap.min.js" defer></script>
+    <script src="lib/toastr.js/toastr.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
