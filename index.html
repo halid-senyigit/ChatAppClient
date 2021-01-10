@@ -57,21 +57,21 @@
                 <h1>Users</h1>
                 <div class="row">
                     <div class="col">
-                        <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">This is a
-                                primary list group item</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">This is
-                                a secondary list group item</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-success">This is a
-                                success list group item</a>
+                        <div id="usersView" class="list-group">
+                            <!-- initaiate first load trough webapi or onconnected-->
+
                         </div>
                         <div id="join" class="input-group mt-4">
-                            <input type="text" class="form-control mr-2">
+                            <input id="nick" type="text" class="form-control mr-2">
                             <span class="input-group-btn">
-                                 <button id="joinBtn" class="btn btn-primary" type="button">Join!</button>
+                                <button id="joinBtn" class="btn btn-primary" type="button">Join!</button>
                             </span>
-                         </div>
+                        </div>
+                        <div id="disconnect" class="d-none">
+                            Hi, <span id="userNickName"></span>
+                            <br>
+                            <button id="disconnectBtn" class="btn btn-danger">Disconnect</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -84,6 +84,7 @@
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/twitter-bootstrap/js/bootstrap.min.js" defer></script>
     <script src="lib/toastr.js/toastr.min.js"></script>
+    <script src="js/ui.controller.js"></script>
     <script src="js/main.js"></script>
 
 </body>
