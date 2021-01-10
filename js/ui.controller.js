@@ -37,3 +37,14 @@ function enableMessageInput(){
 function disableMessageInput(){
     $("input#messageBox").attr("disabled", true)
 }
+
+function AddMessageListView(nick, message){
+    $("ul#messageList").append(`
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    ${message}
+    <span class="badge badge-primary badge-pill">${nick}</span>
+</li>
+    `);
+
+{/*  */}
+}
